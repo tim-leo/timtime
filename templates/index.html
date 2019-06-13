@@ -28,7 +28,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Mini Title</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -51,11 +51,15 @@
 
   <!-- Header -->
   <header class="masthead">
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+    </video>
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">Welcome...It's Here</h1>
+       <!-- <h1 class="mx-auto my-0 text-uppercase">Welcome...It's Here</h1>
         <h2 class="text-white-50 mx-auto mt-2 mb-5">This is a haiku/but please don't get mad if it/sucks some major dick</h2>
-        <a href="#about" class="btn btn-primary js-scroll-trigger">Click Me</a>
+        <a href="#about" class="btn btn-primary js-scroll-trigger">Click Me</a>-->
       </div>
     </div>
   </header>
@@ -65,9 +69,9 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">Built with Bootstrap 4</h2>
-          <p class="text-white-50">Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-            <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+          <h2 class="text-white mb-4">Who does he think he is!</h2>
+          <p class="text-white-50">My name is Tim Robertson and I've been dreaming of being in CyberSecurity since I was 12 years old. I'm confident that I can be a positive influence and healthy contributer to whichever team I'm part of. 
+            <a href="">This is a link to nothing (for now)</a>. Down below you'll find more info about me, topics that I didn't have time for in the video</p>
         </div>
       </div>
       <img src="img/ipad.png" class="img-fluid" alt="">
@@ -81,7 +85,7 @@
       <!-- Featured Project Row -->
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
         <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
+          <img class="img-fluid mb-3 mb-lg-0" src="{{ url_for('static',  filename='img/bg-masthead.jpg') }}" alt="">
         </div>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
@@ -94,7 +98,7 @@
       <!-- Project One Row -->
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
         <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
+          <img class="img-fluid" src="{{ url_for('static',  filename='img/demo-image-01.jpg') }}" alt="">
         </div>
         <div class="col-lg-6">
           <div class="bg-black text-center h-100 project">
@@ -112,7 +116,7 @@
       <!-- Project Two Row -->
       <div class="row justify-content-center no-gutters">
         <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+          <img class="img-fluid" src="{{ url_for('static',  filename='img/demo-image-02.jpg') }}" alt="">
         </div>
         <div class="col-lg-6 order-lg-first">
           <div class="bg-black text-center h-100 project">
@@ -137,8 +141,8 @@
         <div class="col-md-10 col-lg-8 mx-auto text-center">
 
           <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-
+          <h2 class="text-white mb-5">By now, I bet you're wondering where to contact me at!</h2>
+            <p class="text-white-50">Since my work experience is a little hard to display, I devised a simple way to demonstrate where my priorities are at. Below I've got a sign up form that will ask you to supply an email address + password. I will store your email in a database, <b>that will only be used for me to contact you regarding potential work opportunities</b>. Nothing more. Nothing less. </p>
           <form class="form-inline d-flex">
             <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
             <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
@@ -148,11 +152,10 @@
       </div>
     </div>
   </section>
-
-  <!-- Contact Section -->
+  <!-- Contact Section -->  
   <section class="contact-section bg-black">
     <div class="container">
-
+    <!--
       <div class="row">
 
         <div class="col-md-4 mb-3 mb-md-0">
@@ -190,26 +193,25 @@
           </div>
         </div>
       </div>
-
+-->
       <div class="social d-flex justify-content-center">
-        <a href="#" class="mx-2">
+        <!--<a href="#" class="mx-2">
           <i class="fab fa-twitter"></i>
+        </a>-->
+        <a href="https://www.linkedin.com/in/timothy-leo-robertson/" class="mx-2">
+          <i class="fab fa-linkedin"></i>
         </a>
-        <a href="#" class="mx-2">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" class="mx-2">
+        <a href="https://github.com/tim-leo" class="mx-2">
           <i class="fab fa-github"></i>
         </a>
       </div>
 
     </div>
   </section>
-
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
-      Copyright &copy; Your Website 2019
+      Copyright &copy; Tim Robertson 2019
     </div>
   </footer>
 
