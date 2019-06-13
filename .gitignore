@@ -1,7 +1,6 @@
 .pyc
 #env folder/files
 timtimtim/
-config.py
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
